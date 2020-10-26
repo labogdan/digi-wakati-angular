@@ -1,0 +1,35 @@
+<div class="container mTop">
+  <div class="card">
+    <div class="container-fliud">
+      <div class="wrapper row" *ngIf="product">
+
+        <div class="preview col-md-5">
+          <img style="width:66%;" src="https://www.wakatihair.com/medias/?context=bWFzdGVyfGltYWdlc3w0MzA0NzB8aW1hZ2UvcG5nfGgwMi9oYTIvODc5NjE3OTA3MTAwNnwyY2RjMzE3MTFjMDU0MzcxMTNlY2U1NTcwYjVhZjczMGMyMTk0MWU5NDZmOGQ2OGZiMzQyMzY4NGU1MDQyOTA4" />
+        </div>
+
+        <div class="details col-md-7">
+          <h3 class="product-title">{{ product.name }}</h3>
+          <div class="rating">
+            <div class="stars">
+              <span class="fa fa-coffee checked"></span>
+              <span class="fa fa-coffee checked"></span>
+              <span class="fa fa-coffee checked"></span>
+              <span class="fa fa-coffee"></span>
+              <span class="fa fa-coffee"></span>
+            </div>
+            <span class="review-no"></span>
+          </div>
+          <p class="product-description">{{ product.description }}</p>
+          <h4 class="price">current price: <span>${{ product.basePrice }}</span></h4>
+          <div class="action">
+            <button class="add-to-cart btn btn-primary" type="button" (click)="addToCart()">add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
